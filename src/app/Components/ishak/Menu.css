@@ -55,6 +55,128 @@
   gap: 80px;
 }
 
+/* Google Review Banner */
+.google-review-banner {
+  background: linear-gradient(135deg, #b7002e 0%, #8b0020 100%);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(183, 0, 46, 0.3);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.banner-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.banner-text {
+  flex: 1;
+  color: #ffffff;
+}
+
+.banner-text h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: #ffffff;
+}
+
+.banner-text p {
+  font-size: 1rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+}
+
+.banner-action {
+  flex-shrink: 0;
+}
+
+.review-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  color: #b7002e;
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.review-button:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  color: #8b0020;
+}
+
+.review-button svg {
+  transition: transform 0.3s ease;
+}
+
+.review-button:hover svg {
+  transform: translateX(2px);
+}
+
+/* Responsive Banner */
+@media (max-width: 768px) {
+  .google-review-banner {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .banner-text h3 {
+    font-size: 1.2rem;
+  }
+  
+  .banner-text p {
+    font-size: 0.9rem;
+  }
+  
+  .review-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .google-review-banner {
+    padding: 15px;
+    border-radius: 16px;
+  }
+  
+  .banner-icon {
+    font-size: 1.5rem;
+  }
+  
+  .banner-text h3 {
+    font-size: 1.1rem;
+  }
+  
+  .banner-text p {
+    font-size: 0.85rem;
+  }
+}
+
 /* Section Container */
 .section-container {
   background: rgba(255, 255, 255, 0.95);

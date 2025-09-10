@@ -87,6 +87,42 @@ const ItemsView = ({ subSection, onBack }) => {
           margin: "0 auto",
         }}
       >
+        {/* Banner anzeigen, falls vorhanden */}
+        {subSection.banner && (
+          <Card
+            sx={{
+              background: "linear-gradient(135deg, #b7002e 0%, #8b0023 100%)",
+              borderRadius: "12px",
+              mb: 4,
+              boxShadow: "0 4px 20px rgba(183, 0, 46, 0.3)",
+            }}
+          >
+            <CardContent sx={{ padding: "24px", textAlign: "center" }}>
+              <Typography
+                variant="h5"
+                sx={{
+                  color: "#ffffff",
+                  fontWeight: 700,
+                  mb: subSection.banner.subtext ? 1 : 0,
+                }}
+              >
+                {subSection.banner.title}
+              </Typography>
+              {subSection.banner.subtext && (
+                <Typography
+                  variant="body1"
+                  sx={{
+                    color: "#ffcccc",
+                    fontWeight: 500,
+                  }}
+                >
+                  {subSection.banner.subtext}
+                </Typography>
+              )}
+            </CardContent>
+          </Card>
+        )}
+
         {subSection.items.map((item, index) => (
           <Box key={index} sx={{ mb: 6 }}>
             <ItemDisplay item={item} />

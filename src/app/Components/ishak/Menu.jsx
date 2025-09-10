@@ -1,15 +1,58 @@
 "use client";
 import { menu_de } from "./menu_de";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 import "./Menu.css";
 
-const Menu = () => {
+const MenuContent = () => {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const isRestaurant = searchParams.get("restaurant") === "yes";
 
   return (
     <div className="menu-container">
       <div className="menu-overlay"></div>
       <div className="menu-content">
+        {/* Google Bewertungs-Banner */}
+        {isRestaurant && (
+          <div className="google-review-banner">
+            <div className="banner-content">
+              <div className="banner-icon">
+                <img
+                  height={80}
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png"
+                />
+              </div>
+              <div className="banner-text">
+                <h3>Gratis Shot für deine Google-Bewertung!</h3>
+                <p>
+                  Hinterlasse uns eine 5-Sterne-Bewertung auf Google und erhalte
+                  einen kostenlosen Shot deiner Wahl!
+                </p>
+              </div>
+              <div className="banner-action">
+                <a
+                  href="https://share.google/wYqHlOaUwP8mGdlZ5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="review-button"
+                >
+                  Jetzt bewerten
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M7 17L17 7M17 7H7M17 7V17"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
+
         <div className="sections-grid">
           {menu_de.map((section, sectionIndex) => (
             <SectionView
@@ -23,6 +66,14 @@ const Menu = () => {
         </div>
       </div>
     </div>
+  );
+};
+
+const Menu = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <MenuContent />
+    </Suspense>
   );
 };
 

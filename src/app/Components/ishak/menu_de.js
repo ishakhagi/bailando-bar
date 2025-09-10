@@ -7,7 +7,7 @@ export const menu_de = [
       {
         title: "Golden Nachos",
         subtitle:
-          "Handgemacht, hausgemacht und täglich frisch frittiert: So delicioso dank einzigartiger Sausa-Gewürzmischung.",
+          "Handgemacht, hausgemacht und täglich frisch frittiert: So delicioso dank einzigartiger Gewürzmischung.",
         thumbnail: "/golden-nachos.webp",
         items: [
           {
@@ -15,7 +15,7 @@ export const menu_de = [
             description:
               "Maistortilla • Sauerrahm • Guacamole • mexikanische Tomatensalsa • Koriander",
             price: "6,90€",
-            labels: ["Vegetarisch"],
+            labels: ["Vegetarisch", "+ 2€ mit Käse überbacken"],
             children: [],
           },
           {
@@ -23,7 +23,7 @@ export const menu_de = [
             description:
               "Maistortilla • Chili con Carne • mexikanischer Frischkäse • warme Käsesoße • Jalapeños • Koriander",
             price: "7,90€",
-            labels: [],
+            labels: ["+ 2€ mit Käse überbacken"],
             children: [],
           },
           {
@@ -31,7 +31,75 @@ export const menu_de = [
             description:
               "Maistortilla • frittierte Hähnchenstücke in Panko-Panade • mexikanischer Frischkäse • Chipotle-Soße • Jalapeños • Koriander",
             price: "8,90€",
+            labels: ["Hähnchen", "+ 2€ mit Käse überbacken"],
+            children: [],
+          },
+        ],
+      },
+      {
+        title: "Tasty Tacos",
+        subtitle:
+          "Handgemacht, hausgemacht und täglich frisch frittiert: So delicioso dank einzigartiger Gewürzmischung.",
+        thumbnail: "/tacos.webp",
+        banner: {
+          title:
+            "3 Gefüllte Tacos serviert mit Soure Cream oder Tacos Salsa Dip",
+        },
+        items: [
+          {
+            name: "Tacos Pollo",
+            description:
+              "Maistortilla • Chipotle-Soße • Eisbergsalat • mexikanische Tomatensalsa • frittierte Hähnchenstücke in Panko-Panade • mexikanischer Frischkäse • Koriander",
+            price: "8,90€",
             labels: ["Hähnchen"],
+            children: [],
+          },
+          {
+            name: "Tacos Veggie",
+            description:
+              "Maistortilla • Guacamole • Eisbergsalat • mexikanische Tomatensalsa • Fajita-Gemüse • Limetten-Koriander-Mayo • mexikanischer Frischkäse",
+            price: "8,90€",
+            labels: [],
+            children: [],
+          },
+          {
+            name: "Tacos Camarones",
+            description:
+              "Maistortilla • Sweet Garlic Soße • Eisbergsalat • mexikanische Tomatensalsa • Gambas • Limetten-Koriander-Mayo • mexikanischer Frischkäse",
+            price: "8,90€",
+            labels: ["Garnelen"],
+            children: [],
+          },
+        ],
+      },
+      {
+        title: "Enchiladas",
+        subtitle:
+          "Handgemacht, hausgemacht und täglich frisch frittiert: So delicioso dank einzigartiger Gewürzmischung.",
+        thumbnail: "/enchiladas.webp",
+        items: [
+          {
+            name: "Enchiladas Pollo",
+            description:
+              "Gefüllte, gerollte Weizentortillas, mit einer pikanten Chili-Tomaten-Sauce übergossen und im Ofen mit Käse überbacken • Hähnchenbruststreifen • Gemüse",
+            price: "10,90€",
+            labels: ["Hähnchen"],
+            children: [],
+          },
+          {
+            name: "Enchiladas Verdura",
+            description:
+              "Gefüllte, gerollte Weizentortillas, mit einer pikanten Chili-Tomaten-Sauce übergossen und im Ofen mit Käse überbacken • Gemüse",
+            price: "10,90€",
+            labels: ["Vegetarisch"],
+            children: [],
+          },
+          {
+            name: "Enchiladas con Carne",
+            description:
+              "Gefüllte, gerollte Weizentortillas, mit einer pikanten Chili-Tomaten-Sauce übergossen und im Ofen mit Käse überbacken • Chili Con Carne • Gemüse",
+            price: "10,90€",
+            labels: ["Rind"],
             children: [],
           },
         ],
@@ -159,9 +227,9 @@ export const menu_de = [
         },
         items: [
           {
-            name: "Cheesy Cheesburger",
+            name: "Cheesy Cheeseburger",
             description:
-              "Burgerbrötchen • Rindfleisch-Patty • Burgersoße • 2x Chesterkäse • mexikanische Tomatensalsa • EEisbergsalat • Ketchup • Senf",
+              "Burgerbrötchen • Rindfleisch-Patty • Burgersoße • 2x Chesterkäse • mexikanische Tomatensalsa • Eisbergsalat • Ketchup • Senf",
             price: "6,90€ (einzeln) | 9,90€ (kombo)",
             labels: ["Rind"],
             children: [],
@@ -198,18 +266,10 @@ export const menu_de = [
             labels: ["Rind, Schwein"],
             children: [],
           },
-          {
-            name: "Sloppy Joe-Style Burger",
-            description:
-              "Burgerbrötchen • Chili con Carne - Chesterkäse • Coleslaw",
-            price: "4,90€ (einzeln) | 7,90€ (kombo)",
-            labels: ["Rind"],
-            children: [],
-          },
         ],
       },
       {
-        title: "Bar Food & Tapas",
+        title: "Finger Food & Tapas",
         subtitle:
           "Kleine, feine Köstlichkeiten zum Teilen oder selbst genießen, perfekt zu einem Drink und für den kleinen Hunger zwischendurch.",
         thumbnail: "/tapas.webp",
@@ -231,7 +291,7 @@ export const menu_de = [
             children: [],
           },
           {
-            name: "Quesadillas Chipotle Cheese",
+            name: "Quesadinhos Chipotle Cheese",
             description:
               "Weizentortilla • mexikanische Tomatensalsa • Cheddar-Mozzarella-Mix • Chipotle Soße",
             labels: ["Vegetarisch"],
@@ -269,6 +329,18 @@ export const menu_de = [
             price: "5,90€",
           },
           {
+            name: "Onion Rings",
+            description: "Krosse Zwiebelringe • Ketchup oder Mayonnaise",
+            labels: ["Vegetarisch"],
+            price: "5,90€",
+          },
+          {
+            name: "Mozarella Sticks",
+            description: "Mozarella Sticks • Ketchup oder Mayonnaise",
+            labels: ["Vegetarisch"],
+            price: "5,90€",
+          },
+          {
             name: "Glazed Chicken Wings",
             description:
               "Hähnchenflügel glasiert in Soße • Auswahl zwischen: BBQ, Sweet Chili und Buffalo Soße",
@@ -278,9 +350,9 @@ export const menu_de = [
         ],
       },
       {
-        title: "Quesadillas, Beilagen & Dips",
+        title: "Quesadillas",
         subtitle:
-          "Knusprig gefüllte Quesadillas, frische knackige Salate und hausgemachte Dips! Die perfekte Kombination für echten Genuss.",
+          "Knusprig gefüllte Quesadillas! Die perfekte Kombination für echten Genuss.",
         thumbnail: "/quesadillas.webp",
         items: [
           {
@@ -315,6 +387,17 @@ export const menu_de = [
             price: "11,90€",
             children: [],
           },
+        ],
+      },
+      {
+        title: "Salate",
+        subtitle:
+          "Frische Salate mit knackigem Gemüse, aromatischen Dressings und herzhaften Toppings.",
+        thumbnail: "/salat.webp",
+        banner: {
+          title: "Jeder Salat kommt mit einem Knoblauchbrot!",
+        },
+        items: [
           {
             name: "Ensalada de Camarones",
             description:
@@ -331,6 +414,22 @@ export const menu_de = [
             price: "10,80€",
             children: [],
           },
+          {
+            name: "Chicken Ceasar Salat",
+            description:
+              "Hähnchenbruststreifen • Eisbergsalat • Parmesan Dressing • Croutons",
+            labels: ["Hähnchen"],
+            price: "10,80€",
+            children: [],
+          },
+        ],
+      },
+      {
+        title: "Beilagen & Dips",
+        subtitle:
+          "Perfekte Ergänzungen zu jedem Gericht. Knusprige Pommes, leckere Beilagen und würzige Dips.",
+        thumbnail: "/dips.webp",
+        items: [
           {
             name: "Golden Fries",
             description: "Pommes Frites mit Ketchup oder Mayonnaise",
@@ -496,41 +595,19 @@ export const menu_de = [
             children: [],
           },
           {
-            name: "Nachos All-In (4 Personen)",
-            description:
-              "Maistortilla • 1x Guacamole • 1x Sauerrahm • 1x Chipotle-Soße • 1x mexikanische Tomaten-salsa • 1x warme Käsesauce • 1x Mojo Rosso • 1x Limetten-Koriander-Mayo • 1x Sweet-Garlic-Soße",
-            labels: ["Vegetarisch"],
-            price: "15,90€",
-            children: [],
-          },
-          {
-            name: "Burger Sampler (2 Personen)",
-            description:
-              "1x Sloppy Joe-Style Burger • 1x Cheesy Cheeseburger • 1x Crispy Chick-a-Burger • 1x Golden Fries • 1x Ketchup • 1x Mayo",
-            labels: ["Rind", "Hähnchen"],
-            price: "23,90€",
-            children: [],
-          },
-          {
-            name: "Mexican Sampler (4 Personen)",
-            description:
-              "Burritinhos Chili con Carne (3 Stk.) • Quesadinhos Chipotle Cheese (4 Stk.) • 2x Burrito Chipotle Beef • 2x Quesadilla Camarones • 2x Nachos • 2x Guacamole",
-            labels: [],
-            price: "64,90€",
-            children: [],
-          },
-          {
             name: "Cocktail Tower (3+ Personen)",
             description:
               "Sex on the Beach (3,5L) • Zombie (3,5L) • Touchdown (3,5L)",
             labels: [],
             price: "je 69,90€ (3,5L)",
-            children: [
-              {
-                name: "+ Sangria Eimer",
-                price: "24,90€",
-              },
-            ],
+            children: [],
+          },
+          {
+            name: "Sangria Eimer",
+            description: "",
+            labels: [],
+            price: "24,90€",
+            children: [],
           },
         ],
       },
@@ -792,6 +869,9 @@ export const menu_de = [
         subtitle:
           "Unsere beliebtesten alkoholischen Drinks! Perfekt gemixt, frisch serviert und ein Highlight an unserer Bar.",
         thumbnail: "/favoritos.webp",
+        banner: {
+          title: "Normal 9,90€ | Jumbo 12,90€",
+        },
         items: [
           {
             name: "Long Island Ice Tea",
@@ -846,6 +926,22 @@ export const menu_de = [
             price: "9,90€ | 12,90€",
             children: [],
           },
+          {
+            name: "Gin Tai",
+            description:
+              "Gin • Apricot Brandy • Mandel • Lime Juice • Zitrone • Ananas",
+            labels: [],
+            price: "9,90€ | 12,90€",
+            children: [],
+          },
+          {
+            name: "Blink Blink",
+            description:
+              "Vodka • Rum weiß • Melon • Maracuja • Ananas • Zitrone • Erdbeere • Lime Juice",
+            labels: [],
+            price: "9,90€ | 12,90€",
+            children: [],
+          },
         ],
       },
       {
@@ -855,7 +951,7 @@ export const menu_de = [
         thumbnail: "/tequila.webp",
         items: [
           {
-            name: "Classic Sausa Margarita",
+            name: "Classic Margarita",
             description: "Tequila Silver • Triple Sec • Lime Juice • Zitrone",
             labels: [],
             price: "12,90€ Glas",
@@ -873,7 +969,7 @@ export const menu_de = [
             name: "Paloma",
             description: "Tequila Silver • Pink Grapefruit • Lime Juice • Salz",
             labels: [],
-            price: "9,90€ Glas",
+            price: "12,90€ Glas",
             children: [],
           },
         ],
@@ -1040,13 +1136,13 @@ export const menu_de = [
         items: [
           {
             name: "Basil Smash",
-            description: "Bombay Sapphire • Mikko Basil Lime",
+            description: "Gin • Basil Lime",
             labels: [],
             price: "8,90€",
             children: [],
           },
           {
-            name: "Porn Start Martini",
+            name: "Porn Star Martini",
             description: "Vodka • Vanille • Maracuja • Limette • Prosecco",
             labels: [],
             price: "10,90€",
@@ -1164,6 +1260,13 @@ export const menu_de = [
             children: [],
           },
           {
+            name: "Liquid Cocaine 43",
+            labels: [],
+            description: "Licor 43 • Coldbrew Espresso",
+            price: "3,20€ (2cl) / 4,50€ (4cl)",
+            children: [],
+          },
+          {
             name: "Frangelico",
             labels: [],
             price: "3,50€ (2cl) / 4,50€ (4cl)",
@@ -1242,6 +1345,13 @@ export const menu_de = [
             description: "Lillet Blanc • Wildberry • Himbeere",
             labels: [],
             price: "7,50€ (Glas 0,2L)",
+            children: [],
+          },
+          {
+            name: "Lemon Squash",
+            description: "Zitrone • Lime Juice • Zucker • Soda",
+            labels: [],
+            price: "6,50€ (Glas 0,2L)",
             children: [],
           },
           {
@@ -1357,7 +1467,7 @@ export const menu_de = [
             children: [],
           },
           {
-            name: "Bailando Original",
+            name: "Salitos Original",
             labels: [],
             price: "4,50€ (0,33L) | 22,50€ (Sixpack)",
             children: [],
@@ -1369,7 +1479,7 @@ export const menu_de = [
             children: [],
           },
           {
-            name: "Corona Ceo 0,0%",
+            name: "Corona Cero 0,0%",
             labels: [],
             price: "4,50€ (0,33L) | 22,50€ (Sixpack)",
             children: [],
