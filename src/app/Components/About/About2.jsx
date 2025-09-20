@@ -89,7 +89,7 @@ const About2 = () => {
                   viewport={{ once: true }}
                 >
                   <Link
-                    href="/about"
+                    href="/menu"
                     className="theme-btn style4"
                     style={{ marginTop: "40px" }}
                   >
