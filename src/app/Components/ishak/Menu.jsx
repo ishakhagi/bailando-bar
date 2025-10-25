@@ -53,6 +53,21 @@ const MenuContent = () => {
           </div>
         )}
 
+        {/* Happy Hour Banner */}
+        <div className="happy-hour-banner">
+          <div className="happy-hour-content">
+            <div className="happy-hour-icon">🍹</div>
+            <div className="happy-hour-info">
+              <h3>HAPPY HOUR</h3>
+              <p>Täglich 17 - 20 Uhr und ab 23 Uhr</p>
+              <div className="happy-hour-prices">
+                <span>Normale Cocktails 6,90€</span>
+                <span>Jumbo Cocktails 9,90€</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="sections-grid">
           {menu_de.map((section, sectionIndex) => (
             <SectionView

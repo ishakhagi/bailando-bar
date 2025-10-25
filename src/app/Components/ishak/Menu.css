@@ -177,6 +177,129 @@
   }
 }
 
+/* Happy Hour Banner */
+.happy-hour-banner {
+  background: linear-gradient(135deg, #007d3d 0%, #005a2b 100%);
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 25px rgba(0, 125, 61, 0.25);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.happy-hour-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.happy-hour-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.happy-hour-info {
+  flex: 1;
+  color: #ffffff;
+}
+
+.happy-hour-info h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+
+.happy-hour-info p {
+  font-size: 1rem;
+  margin: 0 0 15px 0;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.4;
+}
+
+.happy-hour-prices {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.happy-hour-prices span {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Happy Hour Banner */
+@media (max-width: 768px) {
+  .happy-hour-banner {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .happy-hour-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .happy-hour-info h3 {
+    font-size: 1.3rem;
+  }
+  
+  .happy-hour-info p {
+    font-size: 0.95rem;
+  }
+  
+  .happy-hour-prices {
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .happy-hour-prices span {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .happy-hour-banner {
+    padding: 18px;
+    border-radius: 12px;
+  }
+  
+  .happy-hour-icon {
+    font-size: 2rem;
+  }
+  
+  .happy-hour-info h3 {
+    font-size: 1.2rem;
+  }
+  
+  .happy-hour-info p {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+  
+  .happy-hour-prices {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .happy-hour-prices span {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    width: fit-content;
+  }
+}
+
 /* Section Container */
 .section-container {
   background: rgba(255, 255, 255, 0.95);

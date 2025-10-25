@@ -10,6 +10,15 @@ const page = () => {
   return (
     <div className="bg-color2">
       <HeroBanner1></HeroBanner1>
+      <div className="container">
+        <div className="responsive-image-container">
+          <img
+            src="/halloween.webp"
+            alt="Halloween Special"
+            className="responsive-image"
+          />
+        </div>
+      </div>
       <Offer1></Offer1>
       <About2></About2>
       {/*       <ImagesSection />
